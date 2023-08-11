@@ -220,8 +220,6 @@ public class MavenProjectConverter {
         if (module.getFile().getCanonicalFile().equals(pom)) {
           return module;
         }
-      }
-      for (MavenProject module : modules) {
         if (module.getBasedir().equals(canonical)) {
           return module;
         }
